@@ -1,0 +1,754 @@
+---
+strategy: static
+no_screen_padding: 'no'
+dark_mode: 'no'
+static_data: ''
+polling_verb: get
+framework_version: 3.4.2
+serverless_language: ''
+refresh_interval_floor: ''
+polling_url: ''
+polling_headers: ''
+polling_body: ''
+id: 498631
+oauth_enabled: 'false'
+oauth_pkce_enabled: 'no'
+oauth_authorize_url: ''
+oauth_token_url: ''
+oauth_scopes: ''
+oauth_scope_separator: ''
+oauth_refresh_url: ''
+oauth_auth_params: ''
+oauth_token_headers: ''
+oauth_token_site: ''
+oauth_token_params: ''
+oauth_token_request_auth_method: ''
+oauth_body_format: ''
+oauth_token_response_metadata: ''
+oauth_authorization_method: ''
+oauth_refresh_params: ''
+oauth_token_field_name: ''
+oauth_expiry_field_name: ''
+oauth_expiry_strategy: ''
+oauth_fixed_expiry_ms: ''
+custom_fields:
+- keyname: author_bio
+  field_type: author_bio
+  name: Visited Japanese prefectures
+  description: |
+    Keep track of the prefectures you have visited. Shading deepens with recent visits.
+    (Contact @albert7617 on TRMNL Discord if experiencing issue)
+  category: life,travel
+- keyname: show_darker_as_more_recent
+  field_type: boolean
+  name: Show darker shades for more recent visits
+  description: When enabled, map colors display darker tones for more recent visit dates and lighter tones for older visits.
+  default: 'true'
+- keyname: visited_jp_01
+  field_type: boolean
+  name: 北海道 (Hokkaidô)
+  description: 北海道 (Hokkaidô) visited
+  group: 北海道地方 (Hokkaidō)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_01_date
+- keyname: visited_jp_01_date
+  field_type: date
+  name: Visited 北海道 (Hokkaidô) Visited on [Date]
+  description: Visited 北海道 (Hokkaidô) on date — darker shades indicate more recent visits.
+  group: 北海道地方 (Hokkaidō)
+  optional: true
+- keyname: visited_jp_02
+  field_type: boolean
+  name: 青森県 (Aomori)
+  description: 青森県 (Aomori) visited
+  group: 東北地方 (Tōhoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_02_date
+- keyname: visited_jp_02_date
+  field_type: date
+  name: Visited 青森県 (Aomori) Visited on [Date]
+  description: Visited 青森県 (Aomori) on date — darker shades indicate more recent visits.
+  group: 東北地方 (Tōhoku)
+  optional: true
+- keyname: visited_jp_03
+  field_type: boolean
+  name: 岩手県 (Iwate)
+  description: 岩手県 (Iwate) visited
+  group: 東北地方 (Tōhoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_03_date
+- keyname: visited_jp_03_date
+  field_type: date
+  name: Visited 岩手県 (Iwate) Visited on [Date]
+  description: Visited 岩手県 (Iwate) on date — darker shades indicate more recent visits.
+  group: 東北地方 (Tōhoku)
+  optional: true
+- keyname: visited_jp_04
+  field_type: boolean
+  name: 宮城県 (Miyagi)
+  description: 宮城県 (Miyagi) visited
+  group: 東北地方 (Tōhoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_04_date
+- keyname: visited_jp_04_date
+  field_type: date
+  name: Visited 宮城県 (Miyagi) Visited on [Date]
+  description: Visited 宮城県 (Miyagi) on date — darker shades indicate more recent visits.
+  group: 東北地方 (Tōhoku)
+  optional: true
+- keyname: visited_jp_05
+  field_type: boolean
+  name: 秋田県 (Akita)
+  description: 秋田県 (Akita) visited
+  group: 東北地方 (Tōhoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_05_date
+- keyname: visited_jp_05_date
+  field_type: date
+  name: Visited 秋田県 (Akita) Visited on [Date]
+  description: Visited 秋田県 (Akita) on date — darker shades indicate more recent visits.
+  group: 東北地方 (Tōhoku)
+  optional: true
+- keyname: visited_jp_06
+  field_type: boolean
+  name: 山形県 (Yamagata)
+  description: 山形県 (Yamagata) visited
+  group: 東北地方 (Tōhoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_06_date
+- keyname: visited_jp_06_date
+  field_type: date
+  name: Visited 山形県 (Yamagata) Visited on [Date]
+  description: Visited 山形県 (Yamagata) on date — darker shades indicate more recent visits.
+  group: 東北地方 (Tōhoku)
+  optional: true
+- keyname: visited_jp_07
+  field_type: boolean
+  name: 福島県 (Hukusima)
+  description: 福島県 (Hukusima) visited
+  group: 東北地方 (Tōhoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_07_date
+- keyname: visited_jp_07_date
+  field_type: date
+  name: Visited 福島県 (Hukusima) Visited on [Date]
+  description: Visited 福島県 (Hukusima) on date — darker shades indicate more recent visits.
+  group: 東北地方 (Tōhoku)
+  optional: true
+- keyname: visited_jp_08
+  field_type: boolean
+  name: 茨城県 (Ibaraki)
+  description: 茨城県 (Ibaraki) visited
+  group: 関東地方 (Kantō)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_08_date
+- keyname: visited_jp_08_date
+  field_type: date
+  name: Visited 茨城県 (Ibaraki) Visited on [Date]
+  description: Visited 茨城県 (Ibaraki) on date — darker shades indicate more recent visits.
+  group: 関東地方 (Kantō)
+  optional: true
+- keyname: visited_jp_09
+  field_type: boolean
+  name: 栃木県 (Totigi)
+  description: 栃木県 (Totigi) visited
+  group: 関東地方 (Kantō)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_09_date
+- keyname: visited_jp_09_date
+  field_type: date
+  name: Visited 栃木県 (Totigi) Visited on [Date]
+  description: Visited 栃木県 (Totigi) on date — darker shades indicate more recent visits.
+  group: 関東地方 (Kantō)
+  optional: true
+- keyname: visited_jp_10
+  field_type: boolean
+  name: 群馬県 (Gunma)
+  description: 群馬県 (Gunma) visited
+  group: 関東地方 (Kantō)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_10_date
+- keyname: visited_jp_10_date
+  field_type: date
+  name: Visited 群馬県 (Gunma) Visited on [Date]
+  description: Visited 群馬県 (Gunma) on date — darker shades indicate more recent visits.
+  group: 関東地方 (Kantō)
+  optional: true
+- keyname: visited_jp_11
+  field_type: boolean
+  name: 埼玉県 (Saitama)
+  description: 埼玉県 (Saitama) visited
+  group: 関東地方 (Kantō)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_11_date
+- keyname: visited_jp_11_date
+  field_type: date
+  name: Visited 埼玉県 (Saitama) Visited on [Date]
+  description: Visited 埼玉県 (Saitama) on date — darker shades indicate more recent visits.
+  group: 関東地方 (Kantō)
+  optional: true
+- keyname: visited_jp_12
+  field_type: boolean
+  name: 千葉県 (Tiba)
+  description: 千葉県 (Tiba) visited
+  group: 関東地方 (Kantō)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_12_date
+- keyname: visited_jp_12_date
+  field_type: date
+  name: Visited 千葉県 (Tiba) Visited on [Date]
+  description: Visited 千葉県 (Tiba) on date — darker shades indicate more recent visits.
+  group: 関東地方 (Kantō)
+  optional: true
+- keyname: visited_jp_13
+  field_type: boolean
+  name: 東京都 (Tôkyô)
+  description: 東京都 (Tôkyô) visited
+  group: 関東地方 (Kantō)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_13_date
+- keyname: visited_jp_13_date
+  field_type: date
+  name: Visited 東京都 (Tôkyô) Visited on [Date]
+  description: Visited 東京都 (Tôkyô) on date — darker shades indicate more recent visits.
+  group: 関東地方 (Kantō)
+  optional: true
+- keyname: visited_jp_14
+  field_type: boolean
+  name: 神奈川県 (Kanagawa)
+  description: 神奈川県 (Kanagawa) visited
+  group: 関東地方 (Kantō)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_14_date
+- keyname: visited_jp_14_date
+  field_type: date
+  name: Visited 神奈川県 (Kanagawa) Visited on [Date]
+  description: Visited 神奈川県 (Kanagawa) on date — darker shades indicate more recent visits.
+  group: 関東地方 (Kantō)
+  optional: true
+- keyname: visited_jp_15
+  field_type: boolean
+  name: 新潟県 (Niigata)
+  description: 新潟県 (Niigata) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_15_date
+- keyname: visited_jp_15_date
+  field_type: date
+  name: Visited 新潟県 (Niigata) Visited on [Date]
+  description: Visited 新潟県 (Niigata) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_16
+  field_type: boolean
+  name: 富山県 (Toyama)
+  description: 富山県 (Toyama) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_16_date
+- keyname: visited_jp_16_date
+  field_type: date
+  name: Visited 富山県 (Toyama) Visited on [Date]
+  description: Visited 富山県 (Toyama) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_17
+  field_type: boolean
+  name: 石川県 (Isikawa)
+  description: 石川県 (Isikawa) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_17_date
+- keyname: visited_jp_17_date
+  field_type: date
+  name: Visited 石川県 (Isikawa) Visited on [Date]
+  description: Visited 石川県 (Isikawa) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_18
+  field_type: boolean
+  name: 福井県 (Hukui)
+  description: 福井県 (Hukui) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_18_date
+- keyname: visited_jp_18_date
+  field_type: date
+  name: Visited 福井県 (Hukui) Visited on [Date]
+  description: Visited 福井県 (Hukui) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_19
+  field_type: boolean
+  name: 山梨県 (Yamanasi)
+  description: 山梨県 (Yamanasi) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_19_date
+- keyname: visited_jp_19_date
+  field_type: date
+  name: Visited 山梨県 (Yamanasi) Visited on [Date]
+  description: Visited 山梨県 (Yamanasi) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_20
+  field_type: boolean
+  name: 長野県 (Nagano)
+  description: 長野県 (Nagano) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_20_date
+- keyname: visited_jp_20_date
+  field_type: date
+  name: Visited 長野県 (Nagano) Visited on [Date]
+  description: Visited 長野県 (Nagano) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_21
+  field_type: boolean
+  name: 岐阜県 (Gihu)
+  description: 岐阜県 (Gihu) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_21_date
+- keyname: visited_jp_21_date
+  field_type: date
+  name: Visited 岐阜県 (Gihu) Visited on [Date]
+  description: Visited 岐阜県 (Gihu) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_22
+  field_type: boolean
+  name: 静岡県 (Sizuoka)
+  description: 静岡県 (Sizuoka) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_22_date
+- keyname: visited_jp_22_date
+  field_type: date
+  name: Visited 静岡県 (Sizuoka) Visited on [Date]
+  description: Visited 静岡県 (Sizuoka) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_23
+  field_type: boolean
+  name: 愛知県 (Aiti)
+  description: 愛知県 (Aiti) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_23_date
+- keyname: visited_jp_23_date
+  field_type: date
+  name: Visited 愛知県 (Aiti) Visited on [Date]
+  description: Visited 愛知県 (Aiti) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_24
+  field_type: boolean
+  name: 三重県 (Mie)
+  description: 三重県 (Mie) visited
+  group: 中部地方 (Chūbu)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_24_date
+- keyname: visited_jp_24_date
+  field_type: date
+  name: Visited 三重県 (Mie) Visited on [Date]
+  description: Visited 三重県 (Mie) on date — darker shades indicate more recent visits.
+  group: 中部地方 (Chūbu)
+  optional: true
+- keyname: visited_jp_25
+  field_type: boolean
+  name: 滋賀県 (Siga)
+  description: 滋賀県 (Siga) visited
+  group: 関西地方 (Kansai)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_25_date
+- keyname: visited_jp_25_date
+  field_type: date
+  name: Visited 滋賀県 (Siga) Visited on [Date]
+  description: Visited 滋賀県 (Siga) on date — darker shades indicate more recent visits.
+  group: 関西地方 (Kansai)
+  optional: true
+- keyname: visited_jp_26
+  field_type: boolean
+  name: 京都府 (Kyôto)
+  description: 京都府 (Kyôto) visited
+  group: 関西地方 (Kansai)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_26_date
+- keyname: visited_jp_26_date
+  field_type: date
+  name: Visited 京都府 (Kyôto) Visited on [Date]
+  description: Visited 京都府 (Kyôto) on date — darker shades indicate more recent visits.
+  group: 関西地方 (Kansai)
+  optional: true
+- keyname: visited_jp_27
+  field_type: boolean
+  name: 大阪府 (Ôsaka)
+  description: 大阪府 (Ôsaka) visited
+  group: 関西地方 (Kansai)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_27_date
+- keyname: visited_jp_27_date
+  field_type: date
+  name: Visited 大阪府 (Ôsaka) Visited on [Date]
+  description: Visited 大阪府 (Ôsaka) on date — darker shades indicate more recent visits.
+  group: 関西地方 (Kansai)
+  optional: true
+- keyname: visited_jp_28
+  field_type: boolean
+  name: 兵庫県 (Hyôgo)
+  description: 兵庫県 (Hyôgo) visited
+  group: 関西地方 (Kansai)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_28_date
+- keyname: visited_jp_28_date
+  field_type: date
+  name: Visited 兵庫県 (Hyôgo) Visited on [Date]
+  description: Visited 兵庫県 (Hyôgo) on date — darker shades indicate more recent visits.
+  group: 関西地方 (Kansai)
+  optional: true
+- keyname: visited_jp_29
+  field_type: boolean
+  name: 奈良県 (Nara)
+  description: 奈良県 (Nara) visited
+  group: 関西地方 (Kansai)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_29_date
+- keyname: visited_jp_29_date
+  field_type: date
+  name: Visited 奈良県 (Nara) Visited on [Date]
+  description: Visited 奈良県 (Nara) on date — darker shades indicate more recent visits.
+  group: 関西地方 (Kansai)
+  optional: true
+- keyname: visited_jp_30
+  field_type: boolean
+  name: 和歌山県 (Wakayama)
+  description: 和歌山県 (Wakayama) visited
+  group: 関西地方 (Kansai)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_30_date
+- keyname: visited_jp_30_date
+  field_type: date
+  name: Visited 和歌山県 (Wakayama) Visited on [Date]
+  description: Visited 和歌山県 (Wakayama) on date — darker shades indicate more recent visits.
+  group: 関西地方 (Kansai)
+  optional: true
+- keyname: visited_jp_31
+  field_type: boolean
+  name: 鳥取県 (Tottori)
+  description: 鳥取県 (Tottori) visited
+  group: 中国地方 (Chūgoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_31_date
+- keyname: visited_jp_31_date
+  field_type: date
+  name: Visited 鳥取県 (Tottori) Visited on [Date]
+  description: Visited 鳥取県 (Tottori) on date — darker shades indicate more recent visits.
+  group: 中国地方 (Chūgoku)
+  optional: true
+- keyname: visited_jp_32
+  field_type: boolean
+  name: 島根県 (Simane)
+  description: 島根県 (Simane) visited
+  group: 中国地方 (Chūgoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_32_date
+- keyname: visited_jp_32_date
+  field_type: date
+  name: Visited 島根県 (Simane) Visited on [Date]
+  description: Visited 島根県 (Simane) on date — darker shades indicate more recent visits.
+  group: 中国地方 (Chūgoku)
+  optional: true
+- keyname: visited_jp_33
+  field_type: boolean
+  name: 岡山県 (Okayama)
+  description: 岡山県 (Okayama) visited
+  group: 中国地方 (Chūgoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_33_date
+- keyname: visited_jp_33_date
+  field_type: date
+  name: Visited 岡山県 (Okayama) Visited on [Date]
+  description: Visited 岡山県 (Okayama) on date — darker shades indicate more recent visits.
+  group: 中国地方 (Chūgoku)
+  optional: true
+- keyname: visited_jp_34
+  field_type: boolean
+  name: 広島県 (Hirosima)
+  description: 広島県 (Hirosima) visited
+  group: 中国地方 (Chūgoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_34_date
+- keyname: visited_jp_34_date
+  field_type: date
+  name: Visited 広島県 (Hirosima) Visited on [Date]
+  description: Visited 広島県 (Hirosima) on date — darker shades indicate more recent visits.
+  group: 中国地方 (Chūgoku)
+  optional: true
+- keyname: visited_jp_35
+  field_type: boolean
+  name: 山口県 (Yamaguti)
+  description: 山口県 (Yamaguti) visited
+  group: 中国地方 (Chūgoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_35_date
+- keyname: visited_jp_35_date
+  field_type: date
+  name: Visited 山口県 (Yamaguti) Visited on [Date]
+  description: Visited 山口県 (Yamaguti) on date — darker shades indicate more recent visits.
+  group: 中国地方 (Chūgoku)
+  optional: true
+- keyname: visited_jp_36
+  field_type: boolean
+  name: 徳島県 (Tokusima)
+  description: 徳島県 (Tokusima) visited
+  group: 四国地方 (Shikoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_36_date
+- keyname: visited_jp_36_date
+  field_type: date
+  name: Visited 徳島県 (Tokusima) Visited on [Date]
+  description: Visited 徳島県 (Tokusima) on date — darker shades indicate more recent visits.
+  group: 四国地方 (Shikoku)
+  optional: true
+- keyname: visited_jp_37
+  field_type: boolean
+  name: 香川県 (Kagawa)
+  description: 香川県 (Kagawa) visited
+  group: 四国地方 (Shikoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_37_date
+- keyname: visited_jp_37_date
+  field_type: date
+  name: Visited 香川県 (Kagawa) Visited on [Date]
+  description: Visited 香川県 (Kagawa) on date — darker shades indicate more recent visits.
+  group: 四国地方 (Shikoku)
+  optional: true
+- keyname: visited_jp_38
+  field_type: boolean
+  name: 愛媛県 (Ehime)
+  description: 愛媛県 (Ehime) visited
+  group: 四国地方 (Shikoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_38_date
+- keyname: visited_jp_38_date
+  field_type: date
+  name: Visited 愛媛県 (Ehime) Visited on [Date]
+  description: Visited 愛媛県 (Ehime) on date — darker shades indicate more recent visits.
+  group: 四国地方 (Shikoku)
+  optional: true
+- keyname: visited_jp_39
+  field_type: boolean
+  name: 高知県 (Kôti)
+  description: 高知県 (Kôti) visited
+  group: 四国地方 (Shikoku)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_39_date
+- keyname: visited_jp_39_date
+  field_type: date
+  name: Visited 高知県 (Kôti) Visited on [Date]
+  description: Visited 高知県 (Kôti) on date — darker shades indicate more recent visits.
+  group: 四国地方 (Shikoku)
+  optional: true
+- keyname: visited_jp_40
+  field_type: boolean
+  name: 福岡県 (Hukuoka)
+  description: 福岡県 (Hukuoka) visited
+  group: 九州地方 (Kyūshū)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_40_date
+- keyname: visited_jp_40_date
+  field_type: date
+  name: Visited 福岡県 (Hukuoka) Visited on [Date]
+  description: Visited 福岡県 (Hukuoka) on date — darker shades indicate more recent visits.
+  group: 九州地方 (Kyūshū)
+  optional: true
+- keyname: visited_jp_41
+  field_type: boolean
+  name: 佐賀県 (Saga)
+  description: 佐賀県 (Saga) visited
+  group: 九州地方 (Kyūshū)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_41_date
+- keyname: visited_jp_41_date
+  field_type: date
+  name: Visited 佐賀県 (Saga) Visited on [Date]
+  description: Visited 佐賀県 (Saga) on date — darker shades indicate more recent visits.
+  group: 九州地方 (Kyūshū)
+  optional: true
+- keyname: visited_jp_42
+  field_type: boolean
+  name: 長崎県 (Nagasaki)
+  description: 長崎県 (Nagasaki) visited
+  group: 九州地方 (Kyūshū)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_42_date
+- keyname: visited_jp_42_date
+  field_type: date
+  name: Visited 長崎県 (Nagasaki) Visited on [Date]
+  description: Visited 長崎県 (Nagasaki) on date — darker shades indicate more recent visits.
+  group: 九州地方 (Kyūshū)
+  optional: true
+- keyname: visited_jp_43
+  field_type: boolean
+  name: 熊本県 (Kumamoto)
+  description: 熊本県 (Kumamoto) visited
+  group: 九州地方 (Kyūshū)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_43_date
+- keyname: visited_jp_43_date
+  field_type: date
+  name: Visited 熊本県 (Kumamoto) Visited on [Date]
+  description: Visited 熊本県 (Kumamoto) on date — darker shades indicate more recent visits.
+  group: 九州地方 (Kyūshū)
+  optional: true
+- keyname: visited_jp_44
+  field_type: boolean
+  name: 大分県 (Ôita)
+  description: 大分県 (Ôita) visited
+  group: 九州地方 (Kyūshū)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_44_date
+- keyname: visited_jp_44_date
+  field_type: date
+  name: Visited 大分県 (Ôita) Visited on [Date]
+  description: Visited 大分県 (Ôita) on date — darker shades indicate more recent visits.
+  group: 九州地方 (Kyūshū)
+  optional: true
+- keyname: visited_jp_45
+  field_type: boolean
+  name: 宮崎県 (Miyazaki)
+  description: 宮崎県 (Miyazaki) visited
+  group: 九州地方 (Kyūshū)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_45_date
+- keyname: visited_jp_45_date
+  field_type: date
+  name: Visited 宮崎県 (Miyazaki) Visited on [Date]
+  description: Visited 宮崎県 (Miyazaki) on date — darker shades indicate more recent visits.
+  group: 九州地方 (Kyūshū)
+  optional: true
+- keyname: visited_jp_46
+  field_type: boolean
+  name: 鹿児島県 (Kagosima)
+  description: 鹿児島県 (Kagosima) visited
+  group: 九州地方 (Kyūshū)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_46_date
+- keyname: visited_jp_46_date
+  field_type: date
+  name: Visited 鹿児島県 (Kagosima) Visited on [Date]
+  description: Visited 鹿児島県 (Kagosima) on date — darker shades indicate more recent visits.
+  group: 九州地方 (Kyūshū)
+  optional: true
+- keyname: visited_jp_47
+  field_type: boolean
+  name: 沖縄県 (Okinawa)
+  description: 沖縄県 (Okinawa) visited
+  group: 九州地方 (Kyūshū)
+  conditional_validation:
+  - when: false
+    hidden:
+    - visited_jp_47_date
+- keyname: visited_jp_47_date
+  field_type: date
+  name: Visited 沖縄県 (Okinawa) Visited on [Date]
+  description: Visited 沖縄県 (Okinawa) on date — darker shades indicate more recent visits.
+  group: 九州地方 (Kyūshū)
+  optional: true
+name: Visited Japanese prefectures
+description: Map past Japan visits. Recent trips
+refresh_interval: 1440
